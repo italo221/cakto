@@ -1,0 +1,35 @@
+# Cakto
+
+> Plataforma brasileira de pagamentos e checkout para quem vende online. Reúne checkout transparente (Pix, cartão e boleto), antifraude, split de pagamento e saque rápido em uma só conta — sem mensalidade, pagando apenas por transação aprovada.
+
+## Sobre
+
+A Cakto é a operação financeira completa para infoprodutores, e-commerces, SaaS e prestadores de serviço no Brasil. O checkout transparente roda na própria página do vendedor (sem redirecionamento), com antifraude analisando cada transação e repasses automáticos. O saldo de vendas fica disponível para saque em 1 dia útil. É possível começar como pessoa física (CPF) e migrar para CNPJ depois.
+
+## Recursos
+
+- **Checkout transparente**: Pix, cartão de crédito e boleto na sua própria página, sem redirecionamento.
+- **Antifraude integrado**: análise de risco em cada transação para reduzir chargebacks sem travar vendas legítimas.
+- **Split de pagamento**: divisão automática de cada venda entre sócios, afiliados e parceiros.
+- **Saque rápido**: saldo disponível em 1 dia útil, sob demanda ou agendado.
+- **Painel de vendas**: faturamento, taxa de aprovação e reembolsos em tempo real.
+- **Link de pagamento**: link ou QR Code para vender por WhatsApp, redes sociais ou e-mail.
+- **Integrações**: Shopify, WooCommerce, Wix, WhatsApp, Instagram e Mercado Pago.
+
+## Preços
+
+Sem mensalidade e sem taxa de adesão. Você paga apenas por transação aprovada: Pix 0,99%, cartão 3,99% + R$ 0,49 por venda, boleto R$ 2,49 por boleto compensado.
+
+## Perguntas frequentes
+
+- **Precisa de CNPJ?** Não — pode começar com CPF e migrar para CNPJ depois.
+- **Quando o dinheiro cai?** Saldo de Pix e cartão disponível para saque em 1 dia útil.
+- **Tem mensalidade?** Não, apenas taxa por transação aprovada.
+
+## Links
+
+- Site: https://cakto.com.br
+- Recursos: https://cakto.com.br/#recursos
+- Preços: https://cakto.com.br/#precos
+- Dúvidas: https://cakto.com.br/#duvidas
+- Contato: contato@cakto.com.br
