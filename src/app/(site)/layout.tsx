@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { SmoothScroll } from "@/components/smooth-scroll";
 
