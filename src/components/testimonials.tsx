@@ -88,6 +88,30 @@ export function Testimonials() {
             >
               Negócios de todo o Brasil crescem com a Cakto
             </GradientHeading>
+
+            <div className="mt-6 flex items-center justify-center gap-3">
+              <div className="flex -space-x-2.5">
+                {reviews.slice(0, 5).map((r, i) => (
+                  <span
+                    key={r.name}
+                    className="grid size-9 place-items-center rounded-full border-2 border-surface text-xs font-semibold text-white transition-transform duration-200 hover:-translate-y-1"
+                    style={{
+                      backgroundColor: ["#057a46", "#0a6e42", "#046a3e", "#035932", "#34433c"][i],
+                      zIndex: 5 - i,
+                    }}
+                  >
+                    {r.name
+                      .split(" ")
+                      .map((n) => n[0])
+                      .join("")}
+                  </span>
+                ))}
+              </div>
+              <p className="text-sm text-subtle">
+                <span className="font-semibold text-ink">+30 mil</span>{" "}
+                negócios ativos
+              </p>
+            </div>
           </div>
         </BlurFade>
 

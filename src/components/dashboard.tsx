@@ -3,6 +3,7 @@ import { NumberTicker } from "@/components/ui/number-ticker";
 import { AnimatedCircularProgressBar } from "@/components/ui/animated-circular-progress-bar";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { GradientHeading } from "@/components/ui/gradient-heading";
+import { AnimatedBars } from "./animated-bars";
 
 const bars = [40, 58, 46, 70, 54, 82, 66, 92, 76, 88];
 
@@ -70,15 +71,10 @@ function DashboardUI() {
           <p className="text-xs font-medium text-ink">
             Faturamento · últimos 10 dias
           </p>
-          <div className="mt-2 flex flex-1 items-end gap-1.5 border-b border-line">
-            {bars.map((h, i) => (
-              <div
-                key={i}
-                className="flex-1 rounded-t-[3px] bg-gradient-to-t from-brand-200 to-brand-500"
-                style={{ height: `${h}%` }}
-              />
-            ))}
-          </div>
+          <AnimatedBars
+            bars={bars}
+            className="mt-2 flex flex-1 items-end gap-1.5 border-b border-line"
+          />
         </div>
         <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-line bg-white p-3">
           <AnimatedCircularProgressBar

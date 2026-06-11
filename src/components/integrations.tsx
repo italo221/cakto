@@ -12,6 +12,7 @@ import {
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/ui/animated-beam";
 import { BlurFade } from "@/components/ui/blur-fade";
+import { DotPattern } from "@/components/ui/dot-pattern";
 import { GradientHeading } from "@/components/ui/gradient-heading";
 import { BrandIcon } from "./brand-icon";
 import { Logo } from "./icons";
@@ -89,6 +90,10 @@ export function Integrations() {
             ref={containerRef}
             className="relative mx-auto mt-14 flex h-[360px] w-full max-w-2xl items-center justify-between px-2 sm:px-10"
           >
+            <DotPattern
+              className="text-brand-200/50 [mask-image:radial-gradient(320px_circle_at_center,white,transparent)]"
+              cr={1}
+            />
             <div className="flex flex-col justify-center gap-8">
               <Node ref={l0}>
                 <BrandIcon icon={leftBrands[0].icon} colored title={leftBrands[0].label} className="h-8 w-8" />

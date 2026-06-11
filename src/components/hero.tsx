@@ -8,6 +8,7 @@ import { AuroraText } from "@/components/ui/aurora-text";
 import { WordRotate } from "@/components/ui/word-rotate";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import { VantaNet } from "@/components/vanta-net";
+import { Tilt } from "@/components/tilt";
 
 const highlights = [
   "Sem mensalidade",
@@ -118,7 +119,9 @@ export function Hero() {
         </div>
 
         <BlurFade delay={0.2} inView className="md:justify-self-end">
-          <CheckoutMock />
+          <Tilt max={5}>
+            <CheckoutMock />
+          </Tilt>
         </BlurFade>
       </div>
     </section>
@@ -175,7 +178,7 @@ function CheckoutMock() {
       </div>
 
       {/* floating receipt chip — sits above the card, clear of its content */}
-      <div className="absolute -top-6 left-4 hidden items-center gap-2.5 rounded-xl border border-line bg-white px-4 py-2.5 shadow-[0_18px_40px_-24px_rgba(11,20,17,0.45)] sm:flex">
+      <div className="animate-float absolute -top-6 left-4 hidden items-center gap-2.5 rounded-xl border border-line bg-white px-4 py-2.5 shadow-[0_18px_40px_-24px_rgba(11,20,17,0.45)] sm:flex">
         <span className="grid size-7 place-items-center rounded-full bg-brand-50 text-brand-600">
           <CheckIcon className="h-4 w-4" />
         </span>

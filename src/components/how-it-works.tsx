@@ -51,7 +51,7 @@ export function HowItWorks() {
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {steps.map(({ step, title, description }, i) => (
             <BlurFade key={step} delay={0.1 + i * 0.1} inView>
-              <TextureCard className="h-full">
+              <TextureCard className="h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_50px_-30px_rgba(11,20,17,0.4)]">
                 <TextureCardContent className="px-7 py-7">
                   <span className="text-sm font-semibold text-brand-600">
                     {step}

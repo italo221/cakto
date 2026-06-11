@@ -28,6 +28,7 @@ import { Marquee } from "@/components/ui/marquee";
 import { Ripple } from "@/components/ui/ripple";
 import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 import { AnimatedList, AnimatedListItem } from "@/components/ui/animated-list";
+import { AnimatedBars } from "./animated-bars";
 
 /* backgrounds live only in the TOP half of each card, so they never touch the
    title/description that sit anchored at the bottom */
@@ -146,15 +147,10 @@ const bars = [38, 55, 44, 68, 52, 80, 64, 90, 74];
 function PanelChart() {
   return (
     <div className={`${topZone} h-[56%]`}>
-      <div className="flex h-full items-end gap-1.5 border-b border-line px-7 pt-9 pb-0">
-        {bars.map((h, i) => (
-          <div
-            key={i}
-            className="flex-1 rounded-t-[3px] bg-gradient-to-t from-brand-200 to-brand-500"
-            style={{ height: `${h}%` }}
-          />
-        ))}
-      </div>
+      <AnimatedBars
+        bars={bars}
+        className="flex h-full items-end gap-1.5 border-b border-line px-7 pt-9 pb-0"
+      />
     </div>
   );
 }

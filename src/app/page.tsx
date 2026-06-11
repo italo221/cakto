@@ -5,6 +5,7 @@ import { VelocityBand } from "@/components/velocity-band";
 import { Features } from "@/components/features";
 import { Integrations } from "@/components/integrations";
 import { Dashboard } from "@/components/dashboard";
+import { Manifesto } from "@/components/manifesto";
 import { HowItWorks } from "@/components/how-it-works";
 import { Stats } from "@/components/stats";
 import { GlobalReach } from "@/components/global-reach";
@@ -25,6 +26,7 @@ export default function Home() {
         <Features />
         <Integrations />
         <Dashboard />
+        <Manifesto />
         <HowItWorks />
         <Stats />
         <GlobalReach />

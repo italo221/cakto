@@ -1,4 +1,4 @@
-import { Logo } from "./icons";
+import { AnimatedLogo } from "./animated-logo";
 
 const columns = [
   {
@@ -21,7 +21,7 @@ export function Footer() {
       <div className="container-page py-16">
         <div className="grid gap-12 md:grid-cols-[1.4fr_2fr]">
           <div>
-            <Logo />
+            <AnimatedLogo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-subtle">
               A plataforma de pagamentos para quem vende online no Brasil.
               Checkout, antifraude e repasses em um só lugar.
@@ -37,7 +37,7 @@ export function Footer() {
                     <li key={link}>
                       <a
                         href="#"
-                        className="inline-flex min-h-11 items-center text-sm text-subtle transition-colors hover:text-ink"
+                        className="inline-flex min-h-11 items-center text-sm text-subtle transition-[color,transform] duration-200 hover:translate-x-1 hover:text-ink"
                       >
                         {link}
                       </a>

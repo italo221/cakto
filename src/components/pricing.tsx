@@ -2,6 +2,7 @@ import { ArrowRightIcon, CheckIcon } from "./icons";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { GradientHeading } from "@/components/ui/gradient-heading";
+import { PriceRates } from "./price-rates";
 
 const included = [
   "Sem mensalidade ou taxa de adesão",
@@ -9,12 +10,6 @@ const included = [
   "Antifraude e split inclusos",
   "Painel e relatórios completos",
   "Suporte por e-mail e chat",
-];
-
-const rates = [
-  { method: "Pix", rate: "0,99%", note: "por transação aprovada" },
-  { method: "Cartão", rate: "3,99%", note: "+ R$ 0,49 por venda" },
-  { method: "Boleto", rate: "R$ 2,49", note: "por boleto compensado" },
 ];
 
 export function Pricing() {
@@ -49,20 +44,7 @@ export function Pricing() {
               colorTo="#057a46"
               borderWidth={1.5}
             />
-            <div className="grid md:grid-cols-3">
-              {rates.map(({ method, rate, note }) => (
-                <div
-                  key={method}
-                  className="border-b border-line p-8 text-center last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0"
-                >
-                  <p className="text-sm font-medium text-subtle">{method}</p>
-                  <p className="mt-2 text-3xl font-semibold tracking-tight text-ink">
-                    {rate}
-                  </p>
-                  <p className="mt-1 text-sm text-subtle">{note}</p>
-                </div>
-              ))}
-            </div>
+            <PriceRates />
 
             <div className="grid gap-8 border-t border-line bg-white p-8 md:grid-cols-[1fr_auto] md:items-center">
               <ul className="grid gap-2 sm:grid-cols-2">
